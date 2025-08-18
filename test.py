@@ -1,3 +1,3 @@
-import sys
-print(sys.executable)
-print("Hello World")
+text = input("text: ")
+text = text.replace("i", "I")
+print(text[0:2])

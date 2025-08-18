@@ -1,3 +1,4 @@
+'''
 #String and Parameters
 
 name = input("What's your name ")
@@ -20,6 +21,7 @@ name = name.strip().title()
 #or
 #name = input("Whats ur name?").strip().title()
 
+
 #Integers or int
 x = input("What's x? ")
 y = input("What's y? ")
@@ -38,6 +40,22 @@ y = float(input("What's y? float"))
 
 # Create a rounded result
 z = round(x + y)
+#or round(x/y, 2) set decimal point to 2
 
 # Print the result
-print(z)
+print(z) #4634.5
+print(f"{z:,}") #4,634.5
+print(f"{z:.2f}") #4634.50
+print(f"{z:,.2f}") #4,634.50
+'''
+
+#Function
+def main():
+    name =input("Whats ur name? ")
+    hello(name) #hello Howard
+    hello() #no argument passed, print "hello world"
+
+def hello(to = "world"): #set the default parameter
+    print("hello", to)
+
+main()
