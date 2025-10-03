@@ -17,20 +17,7 @@ def checkletters(s):
     return s[0:1].isalpha()
 
 def checknumbers(s):
-    '''
-    number_started = False
-    
-    for ch in s:
-        if ch.isdigit():
-            if not number_started:
-                number_started = True
-                if ch == "0":
-                    return False
-        else:
-            if number_started:
-                return False
-    return True                
-    '''
+
     number_started = False
     for ch in s[2:]:
         if ch.isdigit():

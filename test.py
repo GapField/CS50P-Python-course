@@ -1,3 +1,5 @@
-text = input("text: ")
-text = text.replace("i", "I")
-print(text[0:2])
+import random
+x =random.choice(range(1,10))
+y =random.choice(range(1,10))        
+
+print(x,y)
